@@ -1,26 +1,33 @@
 {
-    "name": "nizerin/qiniu-sdk",
-    "type": "library",
-    "description": "七牛云实时音频云 sdk-php",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "NiZerin",
-            "email": "nzl199851@gmail.com",
-            "homepage": "http://nizer.in"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0",
-        "squizlabs/php_codesniffer": "~2.3"
-    },
-    "autoload": {
-        "psr-4": {
-            "Qiniu\\": "src/Qiniu",
-            "files": ["src/Qiniu/functions.php"]
-        }
+  "name": "nizerin/qiniu-sdk",
+  "type": "library",
+  "description": "七牛云实时音频云 sdk-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "NiZerin",
+      "email": "nzl199851@gmail.com",
+      "homepage": "http://nizer.in"
     }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "squizlabs/php_codesniffer": "~2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Qiniu\\": "src/Qiniu"
+    },
+    "files": [
+      "src/Qiniu/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Qiniu\\Test\\": "tests"
+    }
+  }
 }
